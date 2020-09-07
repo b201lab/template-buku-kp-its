@@ -43,7 +43,7 @@
 \patchcmd{\chapter}{empty}{plain}{}{}
 
 % Pengaturan format judul bab
-\titleformat{\chapter}[display]{\bfseries\Large}{BAB \centering\thechapter}{0ex}{\vspace{0ex}\centering}[\vspace{2ex}]
+\titleformat{\chapter}[display]{\bfseries\Large}{BAB \centering\Roman{chapter}}{0ex}{\vspace{0ex}\centering}[\vspace{2ex}]
 \titleformat{\section}{\bfseries\large}{\MakeUppercase{\thesection}}{1ex}{}
 \titleformat{\subsection}{\bfseries\large}{\MakeUppercase{\thesubsection}}{1ex}{}
 \titleformat{\subsubsection}{\bfseries\large}{\MakeUppercase{\thesubsubsection}}{1ex}{}
@@ -59,17 +59,14 @@
   \pagenumbering{roman}
 
   % Lembar pengesahaan untuk departemen
-  \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
-  \input{lainnya/pengesahan-departemen}
+  \input{pengesahan/pengesahan-departemen}
   \cleardoublepage
 
   % Lembar pengesahan untuk perusahaan
-  \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
-  \input{lainnya/pengesahan-perusahaan}
+  \input{pengesahan/pengesahan-perusahaan}
   \cleardoublepage
 
   % Kata pengantar
-  \addcontentsline{toc}{chapter}{KATA PENGANTAR}
   \input{lainnya/kata-pengantar}
   \cleardoublepage
 
@@ -78,6 +75,13 @@
   \addcontentsline{toc}{chapter}{\contentsname}
   \titlespacing*{\chapter}{0pt}{0ex}{0ex}
   \tableofcontents
+  \cleardoublepage
+
+  % Nomor halaman isi dimulai dari sini
+  \pagenumbering{arabic}
+
+  % bab 1 pendahuluan
+	\input{bab/bab1-pendahuluan}
   \cleardoublepage
 
 \end{document}
