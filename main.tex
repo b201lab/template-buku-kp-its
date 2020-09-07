@@ -25,6 +25,8 @@
 \usepackage{lipsum} % Pembuatan template kalimat
 \usepackage{titlesec} % Format judul section
 \usepackage{graphicx} % Input gambar
+\usepackage{longtable} % Pembuatan tabel
+\usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \def\kosong{
@@ -83,6 +85,13 @@
   \addcontentsline{toc}{chapter}{\listfigurename}
   \titlespacing*{\chapter}{0pt}{0ex}{0ex}
   \listoffigures
+  \cleardoublepage
+
+  % Daftar tabel
+  \renewcommand*\listtablename{DAFTAR TABEL}
+  \addcontentsline{toc}{chapter}{\listtablename}
+  \titlespacing*{\chapter}{0pt}{0ex}{0ex}
+  \listoftables
   \cleardoublepage
 
   % Nomor halaman isi dimulai dari sini
