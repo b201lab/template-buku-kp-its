@@ -8,7 +8,7 @@
 \usepackage[singlespacing]{setspace}
 
 % Judul dokumen
-\title{Buku Laporan Kerja Prakterk ITS}
+\title{Buku Laporan Kerja Praktek ITC}
 
 % Pengaturan format bahasa
 \usepackage[indonesian]{babel}
@@ -48,9 +48,9 @@
 \titleformat{\section}{\bfseries\large}{\MakeUppercase{\thesection}}{1ex}{}
 \titleformat{\subsection}{\bfseries\large}{\MakeUppercase{\thesubsection}}{1ex}{}
 \titleformat{\subsubsection}{\bfseries\large}{\MakeUppercase{\thesubsubsection}}{1ex}{}
-\titlespacing*{\chapter}{0ex}{-4ex}{0ex}
-\titlespacing{\section}{0ex}{0ex}{0ex}
-\titlespacing{\subsection}{0ex}{0ex}{0ex}
+\titlespacing*{\chapter}{0ex}{0ex}{0ex}
+\titlespacing{\section}{0ex}{1ex}{1ex}
+\titlespacing{\subsection}{0ex}{0.5ex}{0.5ex}
 \titlespacing{\subsubsection}{0ex}{0ex}{0ex}
 
 % Isi keseluruhan dokumen
@@ -60,15 +60,15 @@
   \pagenumbering{roman}
 
   % Lembar pengesahaan untuk departemen
-  \input{pengesahan/pengesahan-departemen}
+  \input{pengesahan/pengesahan-departemen.tex}
   \cleardoublepage
 
   % Lembar pengesahan untuk perusahaan
-  \input{pengesahan/pengesahan-perusahaan}
+  \input{pengesahan/pengesahan-perusahaan.tex}
   \cleardoublepage
 
   % Kata pengantar
-  \input{lainnya/kata-pengantar}
+  \input{lainnya/kata-pengantar.tex}
   \cleardoublepage
 
   % Daftar isi
@@ -88,12 +88,16 @@
   % Nomor halaman isi dimulai dari sini
   \pagenumbering{arabic}
 
-  % bab 1 pendahuluan
-	\input{bab/bab1-pendahuluan}
+  % Bab 1 pendahuluan
+	\input{bab/bab1-pendahuluan.tex}
   \cleardoublepage
 
-  % bab 2 profil perusahaan
-	\input{bab/bab2-profil-perusahaan}
+  % Bab 2 profil perusahaan
+	\input{bab/bab2-profil-perusahaan.tex}
+  \cleardoublepage
+
+  % Bab 3 tunjauan pustaka
+	\input{bab/bab3-tinjauan-pustaka.tex}
   \cleardoublepage
 
 \end{document}
