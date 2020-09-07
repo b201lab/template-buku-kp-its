@@ -27,6 +27,7 @@
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
 \usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
+\usepackage{natbib} % kutipan artikel
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \def\kosong{
@@ -119,6 +120,15 @@
 
   % Bab 6 kesimpulan dan saran
 	\input{bab/bab6-kesimpulan-saran.tex}
+  \cleardoublepage
+
+  % Daftar pustaka
+  \renewcommand\bibname{DAFTAR PUSTAKA}
+  \addcontentsline{toc}{chapter}{\bibname}
+  \titlespacing*{\chapter}{0pt}{0ex}{5ex}
+  \appendix
+  \bibliographystyle{apalike}
+  \bibliography{pustaka/pustaka.bib}
   \cleardoublepage
 
 \end{document}
