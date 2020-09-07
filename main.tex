@@ -23,7 +23,6 @@
 \usepackage{etoolbox} % Mengubah fungsi default
 \usepackage{enumitem} % Pembuatan list
 \usepackage{lipsum} % Pembuatan template kalimat
-\usepackage{titlesec} % Format judul section
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
 \usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
@@ -47,6 +46,7 @@
 \patchcmd{\chapter}{empty}{plain}{}{}
 
 % Pengaturan format judul bab
+\usepackage{titlesec}
 \titleformat{\chapter}[display]{\bfseries\Large}{BAB \centering\Roman{chapter}}{0ex}{\vspace{0ex}\centering}[\vspace{2ex}]
 \titleformat{\section}{\bfseries\large}{\MakeUppercase{\thesection}}{1ex}{}
 \titleformat{\subsection}{\bfseries\large}{\MakeUppercase{\thesubsection}}{1ex}{}
@@ -61,6 +61,32 @@
 {\par\vspace{\abovedisplayskip}\noindent
 	\tabularx{\columnwidth}{>{$}l<{$} @{${}={}$} >{\raggedright\arraybackslash}X}}
 {\endtabularx\par\vspace{\belowdisplayskip}}
+
+% Pengaturan format baris program
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+\lstset{style=codestyle}
 
 % Isi keseluruhan dokumen
 \begin{document}
