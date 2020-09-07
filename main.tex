@@ -56,6 +56,12 @@
 \titlespacing{\subsection}{0ex}{0.5ex}{0.5ex}
 \titlespacing{\subsubsection}{0ex}{0ex}{0ex}
 
+% Pengaturan persamaan
+\newenvironment{conditions}
+{\par\vspace{\abovedisplayskip}\noindent
+	\tabularx{\columnwidth}{>{$}l<{$} @{${}={}$} >{\raggedright\arraybackslash}X}}
+{\endtabularx\par\vspace{\belowdisplayskip}}
+
 % Isi keseluruhan dokumen
 \begin{document}
 
