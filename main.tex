@@ -26,11 +26,11 @@
 \usepackage{lipsum} % Pembuatan template kalimat
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
-\usepackage[table,xcdraw,pdftex,cmyk]{xcolor} % Pewarnaan tabel
+\usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
 \usepackage{natbib} % Kutipan artikel
 \usepackage{eso-pic} % Pembuatan background
-\usepackage{tikz} % Pembuatan basic shape
 \usepackage{changepage} % Pembuatan teks kolom
+\usepackage{wrapfig} % Wrapping gambar
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \def\kosong{
@@ -169,6 +169,10 @@
   \appendix
   \bibliographystyle{apalike}
   \bibliography{pustaka/pustaka.bib}
+  \cleardoublepage
+
+  % Biografi penulis
+	\input{lainnya/biografi-penulis.tex}
   \cleardoublepage
 
 \end{document}
