@@ -9,12 +9,13 @@
 
 % Judul dokumen
 \title{Buku Laporan Kerja Praktek ITC}
+\author{Musk, Elon Reeve \and Kjellberg, Felix Arvid Ulf}
 
 % Pengaturan format bahasa
 \usepackage[indonesian]{babel}
 
 % Pengaturan detail pada file PDF
-\usepackage[pdfauthor={Elon Musk},bookmarksnumbered,pdfborder={0 0 0}]{hyperref}
+\usepackage[pdfauthor={\@author},bookmarksnumbered,pdfborder={0 0 0}]{hyperref}
 
 % Pengaturan jenis karakter
 \usepackage[utf8]{inputenc}
@@ -25,8 +26,11 @@
 \usepackage{lipsum} % Pembuatan template kalimat
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
-\usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
-\usepackage{natbib} % kutipan artikel
+\usepackage[table,xcdraw,pdftex,cmyk]{xcolor} % Pewarnaan tabel
+\usepackage{natbib} % Kutipan artikel
+\usepackage{eso-pic} % Pembuatan background
+\usepackage{tikz} % Pembuatan basic shape
+\usepackage{changepage} % Pembuatan teks kolom
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \def\kosong{
@@ -89,6 +93,14 @@
 
   % Nomor halaman pembuka dimulai dari sini
   \pagenumbering{roman}
+
+  % Sampul luar
+  \input{sampul/sampul-luar.tex}
+  \cleardoublepage
+
+  % Sampul dalam
+  \input{sampul/sampul-dalam.tex}
+  \cleardoublepage
 
   % Lembar pengesahaan untuk departemen
   \input{pengesahan/pengesahan-departemen.tex}
