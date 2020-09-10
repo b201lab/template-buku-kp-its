@@ -1,16 +1,19 @@
-# Template Buku Laporan Kerja Praktek ITS (Institut Teknologi Sepuluh Nopember) Berbasis LaTeX
+# Template Buku Laporan Kerja Praktik ITS (Institut Teknologi Sepuluh Nopember) Berbasis LaTeX
 
-Repositori ini berisi _template_ dari buku laporan kerja praktek berbasis [**LaTeX**](https://www.latex-project.org/) yang disesuaikan dengan format yang diberlakukan oleh **Institut Teknologi Sepuluh Nopember**.
-_Template_ ini terinspirasi dari repositori [**rohwid/id-thesis-book-min-electics-its**](https://github.com/rohwid/id-thesis-book-min-electics-its) yang digunakan sebagai _template_ buku tesis **Jaringan Cerdas Multimedia** **FTEIC** - **ITS** dengan perubahan yang menyesuaikan kebutuhan pembukuan laporan kerja praktek serta dengan pemangkasan isi.
+Repositori ini berisi _template_ dari buku laporan kerja praktik berbasis [**LaTeX**](https://www.latex-project.org/) yang disesuaikan dengan format yang diberlakukan oleh **Institut Teknologi Sepuluh Nopember**.
+_Template_ ini terinspirasi dari repositori [**rohwid/id-thesis-book-min-electics-its**](https://github.com/rohwid/id-thesis-book-min-electics-its) yang digunakan sebagai _template_ buku tesis **Jaringan Cerdas Multimedia** **FTEIC** - **ITS** dengan perubahan yang menyesuaikan kebutuhan pembukuan laporan kerja praktik serta dengan pemangkasan isi.
 _Template_ yang dibuat saat ini baru mengikuti aturan yang diberlakukan oleh **Departemen Teknik Elektro** **FTEIC** - **ITS** dengan sedikit penyesuaian, sehingga, secara penuh _template_ ini belum mewakili aturan yang berlaku secara umum di setiap departemen yang ada di **ITS**.
 Untuk itu, diharapkan adanya kontribusi dari pihak yang bersedia membantu agar nantinya _template_ ini bisa konsisten digunakan setiap tahun dengan menyesuaikan aturan dari setiap departemen yang ada di **ITS**.
+
+> Perlu diketahui, _template_ ini bukanlah _template_ resmi yang dikeluarkan oleh **ITS** maupun departemen-departemen yang ada di bawah naungan **ITS**.
 
 ## Fitur
 
 - Format ukuran halaman, _margin_, dan _font_ yang disesuaikan dengan aturan yang berlaku di **ITS**.
-- Sampul yang dibuat otomatis melalui **LaTeX**.
-- Penomoran halaman, gambar, tabel, dan _citation_ secara otomatis.
-- _Input_ gambar dengan format **JPEG** maupun **PNG**.
+- Disertai halaman-halaman yang umumnya diperlukan seperti sampul, lembar pengesahan, kata pengantar, dsb.
+- Pembuatan daftar isi, daftar gambar, daftar tabel, dan daftar pustaka secara otomatis.
+- Penomoran halaman, gambar, tabel, dan referensi secara otomatis.
+- _Input_ gambar dengan format **JPEG**, **PNG**, maupun format lain.
 - Pembuatan persamaan, tabel, dan _code snippet_.
 
 ## Penjelasan Singkat LaTeX
@@ -26,7 +29,7 @@ Untuk saat ini ada beberapa _compiler_ yang bisa digunakan untuk meng-_compile_ 
 Secara umum, cara instalasi dari **TeX Live** bisa dilihat pada halaman utama mereka [disini](https://tug.org/texlive/acquire-netinstall.html).
 Namun, karena adanya kebutuhan terhadap _package_ tertentu dari _template_ ini, maka petunjuk ini dibuat sehingga pengguna nantinya cukup menginstall **TeX Live** beserta dengan _package_ tertentu yang dibutuhkan saja.
 
-> Sebagai catatan, jika anda memilih untuk menggunakan _compiler_ lain seperti [**MikTeX**](https://miktex.org/), [**MacTeX**](https://tug.org/mactex/), dsb. Anda boleh melewati bagian ini.
+> Jika anda memilih untuk menggunakan _compiler_ lain seperti [**MikTeX**](https://miktex.org/), [**MacTeX**](https://tug.org/mactex/), dsb. Anda boleh melewati bagian ini.
 
 ### Instalasi Menggunakan Installer Untuk Windows
 
@@ -59,7 +62,7 @@ Namun, karena adanya kebutuhan terhadap _package_ tertentu dari _template_ ini, 
 
 ## Integrasi LaTeX Dengan Visual Studio Code
 
-> Sebagai catatan, jika anda memilih untuk menggunakan _text editor_ maupun _IDE_ lain seperti [**Sublime Text**](https://www.sublimetext.com/), [**Texmaker**](https://www.xm1math.net/texmaker/), [**TeXstudio**](https://www.texstudio.org/), dsb. Anda boleh melewati bagian ini.
+> Jika anda memilih untuk menggunakan _text editor_ maupun _IDE_ lain seperti [**Sublime Text**](https://www.sublimetext.com/), [**Texmaker**](https://www.xm1math.net/texmaker/), [**TeXstudio**](https://www.texstudio.org/), dsb. Anda boleh melewati bagian ini.
 
 - Unduh **Visual Studio Code** pada halaman [berikut](https://code.visualstudio.com/download).
 - Buka _file_ yang sudah diunduh dan lakukan instalasi **Visual Studio Code**.
@@ -72,7 +75,7 @@ Namun, karena adanya kebutuhan terhadap _package_ tertentu dari _template_ ini, 
 ## Kompilasi Template Menjadi PDF
 
 - Kompilasi dilakukan menggunakan _terminal_ (**Linux**) atau **Command Prompt**/**PowerShell** (**Windows**) pada direktori dari _template_ ini.
-  > Sebagai catatan, jika menggunakan **Visual Studio Code**, anda bisa membuka _terminal_ langsung pada _menu_ `View` -> `Terminal`.
+  > Jika menggunakan **Visual Studio Code**, anda bisa membuka _terminal_ langsung pada _menu_ `View` -> `Terminal`.
 - Gunakan perintah `pdflatex main.tex` untuk melakukan kompilasi template menjadi **PDF**.
   Terkadang perintah perlu dilakukan beberapa kali (biasanya dua kali) agar semua konten muncul pada **PDF** yang dihasilkan.
 - Gunakan perintah `bibtex main.aux` kemudian `pdflatex main.tex` beberapa kali (biasanya dua kali) untuk memunculkan hal yang berhubungan dengan pustaka pada **PDF** yang dihasilkan.
@@ -84,10 +87,10 @@ Setelah dilakukan kompilasi, hasilnya akan ada banyak _file_ `main` dengan forma
 Yang terpenting adalah _file_ `main.pdf` yang merupakan hasil akhir dari kompilasi dokumen tersebut.
 
 Selain itu ada beberapa bagian lain dari _template_ ini selain `main.tex` yang bisa diubah, seperti:
-- **_Folder_ `bab`**, berisi _file_ `*.tex` dari bab yang akan dimasukkan pada buku laporan kerja praktek.
-- **_Folder_ `pengesahan`**, berisi _file_ `*.tex` dari lembar pengesahan untuk buku laporan kerja praktek.
-- **_Folder_ `sampul`**, berisi _file_ `*.tex` dari sampul luar dan dalam untuk buku laporan kerja praktek.
-- **_Folder_ `lainnya`**, berisi _file_ `*.tex` dari halaman lain yang akan dimasukkan pada buku laporan kerja praktek.
+- **_Folder_ `bab`**, berisi _file_ `*.tex` dari bab yang akan dimasukkan pada buku laporan kerja praktik.
+- **_Folder_ `pengesahan`**, berisi _file_ `*.tex` dari lembar pengesahan untuk buku laporan kerja praktik.
+- **_Folder_ `sampul`**, berisi _file_ `*.tex` dari sampul luar dan dalam untuk buku laporan kerja praktik.
+- **_Folder_ `lainnya`**, berisi _file_ `*.tex` dari halaman lain yang akan dimasukkan pada buku laporan kerja praktik.
 - **_Folder_ `gambar`**, berisi _file_ `*.jpg`, `*.png`, maupun format gambar lain yang akan dimasukkan pada dokumen.
 - **_Folder_ `tabel`**, berisi _file_ `*.text` dari tabel yang akan dimasukkan pada dokumen.
 - **_Folder_ `program`**, berisi _file_ kode program yang akan dimasukkan pada dokumen.
