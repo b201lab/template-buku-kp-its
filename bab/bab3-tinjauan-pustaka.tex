@@ -1,20 +1,29 @@
+% Ubah kalimat sesuai dengan judul dari bab ini
 \chapter{TINJAUAN PUSTAKA}
 \vspace{4ex}
 
+% Pengaturan ukuran indentasi
 \setlength{\parindent}{7ex}
+
+% Ubah konten-konten berikut sesuai dengan yang ingin diisi pada bab ini
 
 \section{Roket Luar Angkasa}
 \vspace{1ex}
 
+% Contoh input gambar dengan format *.jpg
 \begin{figure} [ht] \centering
+  % Nama dari file gambar yang diinputkan
 	\includegraphics[scale=0.45]{gambar/space-shuttle.jpg}
+  % Keterangan gambar yang diinputkan
 	\caption{Peluncuran Pesawat Luar Angkasa \emph{Discovery}}
+  % Label referensi dari gambar yang diinputkan
 	\label{fig:spaceShuttle}
 \end{figure}
 
 Roket luar angkasa merupakan \lipsum[1]
 \vspace{0.5ex}
 
+% Contoh penggunaan referensi dari gambar yang diinputkan
 \emph{Discovery} \ref{fig:spaceShuttle} merupakan \lipsum[2]
 
 Beberapa keunggulan dari \lipsum[3][1-2] adalah:
@@ -40,11 +49,17 @@ Gravitasi merupakan \lipsum[1]
 \subsection{Hukum Newton}
 \vspace{1ex}
 
+% Contoh penggunaan referensi dari pustaka
 Newton pernah merumuskan \citep{newtonLaw} bahwa \lipsum[2]
+% Contoh penggunaan referensi dari persamaan
 Kemudian menjadi persamaan seperti pada persamaan \ref{eq:hukumPertama}.
 \vspace{0.5ex}
 
-\begin{equation}\label{eq:hukumPertama}
+% Contoh pembuatan persamaan
+\begin{equation}
+  % Label referensi dari persamaan yang dibuat
+  \label{eq:hukumPertama}
+  % Baris kode persamaan yang dibuat
   \sum \mathbf{F} = 0\; \Leftrightarrow\; \frac{\mathrm{d} \mathbf{v} }{\mathrm{d}t} = 0.
 \end{equation}
 \vspace{0.5ex}

@@ -1,7 +1,11 @@
+% Ubah kalimat sesuai dengan judul dari bab ini
 \chapter{DESAIN DAN IMPLEMENTASI}
 \vspace{4ex}
 
+% Pengaturan ukuran indentasi
 \setlength{\parindent}{7ex}
+
+% Ubah konten-konten berikut sesuai dengan yang ingin diisi pada bab ini
 
 \section{Deskripsi Sistem}
 \vspace{1ex}
@@ -9,23 +13,42 @@
 Sistem akan dibuat dengan \lipsum[1]
 \vspace{0.5ex}
 
-\lipsum[2]
-\vspace{0.5ex}
-
-\newpage
-
 \section{Implementasi Alat}
 \vspace{1ex}
 
-Alat diimplementasikan dengan \lipsum[3]
+Alat diimplementasikan dengan \lipsum[2]
 \vspace{0.5ex}
 
+% Digunakan untuk page break
+\newpage
+
+% Contoh pembuatan code snippet
+\begin{lstlisting}[
+  language=C++,
+  label={lst:helloWorld},
+  caption={Hello World}
+]
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+\end{lstlisting}
+\vspace{0.5ex}
+
+% Contoh penggunaan referensi dari code snippet yang diinputkan
+Seperti contoh pada baris program \ref{lst:helloWorld} dan \ref{lst:bilanganPrima}, \lipsum[3]
+\vspace{0.5ex}
+
+% Contoh input code snippet
 \lstinputlisting[
+  % Bahasa yang digunakan oleh code snippet
   language=Python,
+  % Label referensi dari code snippet yang diinputkan
   label={lst:bilanganPrima},
+  % Keterangan dari code snippet yang diinputkan
   caption={Perhitungan Bilangan Prima}
+% Nama dari file code snippet yang diinputkan
 ]{program/prime-number.py}
-\vspace{0.5ex}
-
-Seperti contoh pada baris program \ref{lst:bilanganPrima} \lipsum[4]
 \vspace{0.5ex}
