@@ -23,9 +23,29 @@ Untuk saat ini ada beberapa _compiler_ yang bisa digunakan untuk meng-_compile_ 
 
 ## Instalasi TeX Live
 
+Secara umum, cara instalasi dari **TeX Live** bisa dilihat pada halaman utama mereka [disini](https://tug.org/texlive/acquire-netinstall.html).
+Namun, karena adanya kebutuhan terhadap _package_ tertentu dari _template_ ini, maka petunjuk ini dibuat sehingga pengguna nantinya cukup menginstall **TeX Live** beserta dengan _package_ tertentu yang dibutuhkan saja.
+
 > Sebagai catatan, jika anda memilih untuk menggunakan _compiler_ lain seperti [**MikTeX**](https://miktex.org/), [**MacTeX**](https://tug.org/mactex/), dsb. Anda boleh melewati bagian ini.
 
-### Instalasi Pada Linux
+### Instalasi Menggunakan Installer Untuk Windows
+
+- Unduh _installer_ **TeX Live** untuk **Windows** pada tautan [berikut](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe).
+- Buka _file_ _installer_ tersebut, kemudian pilih `Install`.
+- Jika masih belum muncul bagian instalasi, pilih alternatif _mirror_ `Asia` -> `Singapore`.
+- Setelah muncul, pilih bagian `Advanced`.
+- Atur `Scheme` menjadi `minimal scheme (plain only)`.
+- Klik `Customize`, lalu centang bagian berikut:
+  - `Other Languages`.
+  - `BibTeX additional styles`.
+  - `Essential programs and files`.
+  - `LaTeX additional packages`.
+  - `LaTeX recommended packages`.
+  - `Mathematics, natural sciences, computer science packages`.
+  - `Windows-only support programs`.
+- Klik `Install` dan tunggu hingga proses instalasi selesai.
+
+### Instalasi Menggunakan APT Linux
 
 - Gunakan perintah berikut untuk melakukan instalasi **TeX Live** pada **Linux**:
   ```bash
@@ -35,8 +55,9 @@ Untuk saat ini ada beberapa _compiler_ yang bisa digunakan untuk meng-_compile_ 
     texlive-bibtex-extra \
     texlive-science
   ```
+- Tunggu hingga proses instalasi selesai.
 
-## Integrasi Dengan Visual Studio Code
+## Integrasi LaTeX Dengan Visual Studio Code
 
 > Sebagai catatan, jika anda memilih untuk menggunakan _text editor_ maupun _IDE_ lain seperti [**Sublime Text**](https://www.sublimetext.com/), [**Texmaker**](https://www.xm1math.net/texmaker/), [**TeXstudio**](https://www.texstudio.org/), dsb. Anda boleh melewati bagian ini.
 
