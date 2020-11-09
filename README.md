@@ -101,5 +101,5 @@ Selain itu ada beberapa bagian lain dari _template_ ini selain `main.tex` yang b
 ## Kontribusi
 
 Karena keterbatasan pengetahuan mengenai aturan yang berlaku di setiap departemen di **ITS** serta agar _template_ yang dibuat ini bisa berkembang dengan fitur yang lebih banyak, diharapkan adanya kontribusi dari pihak lain yang bersedia untuk membantu.
-Untuk melakukan kontribusi, siapapun bisa memulai dengan melakukan _fork_ pada repositori utama _template_ ini yang ada di [**threeal/template-buku-kp-its**](https://github.com/threeal/template-buku-kp-its), kemudian membuat perubahan dan melakukan _pull request_.
-Jika terdapat masalah dari _template_ ini maupun hal yang berkaitan dengan _template_ ini, jangan ragu untuk membuat _issue_ baru pada halaman _issues_ yang bisa diakses [disini](https://github.com/threeal/template-buku-kp-its/issues).
+Untuk melakukan kontribusi, siapapun bisa memulai dengan melakukan _fork_ pada repositori utama _template_ ini yang ada di [**b201lab/template-buku-kp-its**](https://github.com/b201lab/template-buku-kp-its), kemudian membuat perubahan dan melakukan _pull request_.
+Jika terdapat masalah dari _template_ ini maupun hal yang berkaitan dengan _template_ ini, jangan ragu untuk membuat _issue_ baru pada halaman _issues_ yang bisa diakses [disini](https://github.com/b201lab/template-buku-kp-its/issues).
