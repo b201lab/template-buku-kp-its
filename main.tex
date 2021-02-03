@@ -1,5 +1,5 @@
 % Pengaturan ukuran teks dan bentuk halaman dua sisi
-\documentclass[10pt, twoside]{report}
+\documentclass[10pt,twoside]{report}
 
 % Pengaturan ukuran halaman dan margin
 \usepackage[a5paper,top=25mm,left=25mm,right=20mm,bottom=25mm]{geometry}
@@ -8,7 +8,7 @@
 \usepackage[singlespacing]{setspace}
 
 % Judul dokumen
-\title{Buku Laporan Kerja Praktik ITC}
+\title{Buku Laporan Kerja Praktik ITS}
 \author{Musk, Elon Reeve \and Kjellberg, Felix Arvid Ulf}
 
 % Pengaturan format bahasa
@@ -20,6 +20,12 @@
 % Pengaturan jenis karakter
 \usepackage[utf8]{inputenc}
 
+% Pengaturan ukuran indentasi paragraf
+\setlength{\parindent}{2em}
+
+% Pengaturan ukuran spasi paragraf
+\setlength{\parskip}{0.5ex}
+
 % Package lainnya
 \usepackage{etoolbox} % Mengubah fungsi default
 \usepackage{enumitem} % Pembuatan list
@@ -27,7 +33,7 @@
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
 \usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
-\usepackage{natbib} % Kutipan artikel
+\usepackage[numbers]{natbib} % Kutipan artikel
 \usepackage{eso-pic} % Pembuatan background
 \usepackage{changepage} % Pembuatan teks kolom
 \usepackage{wrapfig} % Wrapping gambar
@@ -55,10 +61,10 @@
 \titleformat{\section}{\bfseries\large}{\MakeUppercase{\thesection}}{1ex}{}
 \titleformat{\subsection}{\bfseries\large}{\MakeUppercase{\thesubsection}}{1ex}{}
 \titleformat{\subsubsection}{\bfseries\large}{\MakeUppercase{\thesubsubsection}}{1ex}{}
-\titlespacing*{\chapter}{0ex}{0ex}{0ex}
-\titlespacing{\section}{0ex}{1ex}{1ex}
-\titlespacing{\subsection}{0ex}{0.5ex}{0.5ex}
-\titlespacing{\subsubsection}{0ex}{0ex}{0ex}
+\titlespacing{\chapter}{0ex}{0ex}{2ex}
+\titlespacing{\section}{0ex}{2ex}{1ex}
+\titlespacing{\subsection}{0ex}{1ex}{0.5ex}
+\titlespacing{\subsubsection}{0ex}{1ex}{0.5ex}
 
 % Pengaturan persamaan
 \newenvironment{conditions}
@@ -117,21 +123,18 @@
   % Daftar isi
   \renewcommand*\contentsname{DAFTAR ISI}
   \addcontentsline{toc}{chapter}{\contentsname}
-  \titlespacing*{\chapter}{0pt}{0ex}{0ex}
   \tableofcontents
   \cleardoublepage
 
   % Daftar gambar
   \renewcommand*\listfigurename{DAFTAR GAMBAR}
   \addcontentsline{toc}{chapter}{\listfigurename}
-  \titlespacing*{\chapter}{0pt}{0ex}{0ex}
   \listoffigures
   \cleardoublepage
 
   % Daftar tabel
   \renewcommand*\listtablename{DAFTAR TABEL}
   \addcontentsline{toc}{chapter}{\listtablename}
-  \titlespacing*{\chapter}{0pt}{0ex}{0ex}
   \listoftables
   \cleardoublepage
 
@@ -139,35 +142,33 @@
   \pagenumbering{arabic}
 
   % Bab 1 pendahuluan
-	\input{bab/bab1-pendahuluan.tex}
+	\input{bab/1-pendahuluan.tex}
   \cleardoublepage
 
   % Bab 2 profil perusahaan
-	\input{bab/bab2-profil-perusahaan.tex}
+	\input{bab/2-profil-perusahaan.tex}
   \cleardoublepage
 
   % Bab 3 tunjauan pustaka
-	\input{bab/bab3-tinjauan-pustaka.tex}
+	\input{bab/3-tinjauan-pustaka.tex}
   \cleardoublepage
 
   % Bab 4 desain dan implementasi
-	\input{bab/bab4-desain-implementasi.tex}
+	\input{bab/4-desain-implementasi.tex}
   \cleardoublepage
 
   % Bab 5 pengujian dan evaluasi
-	\input{bab/bab5-pengujian-evaluasi.tex}
+	\input{bab/5-pengujian-evaluasi.tex}
   \cleardoublepage
 
   % Bab 6 kesimpulan dan saran
-	\input{bab/bab6-kesimpulan-saran.tex}
+	\input{bab/6-kesimpulan-saran.tex}
   \cleardoublepage
 
   % Daftar pustaka
   \renewcommand\bibname{DAFTAR PUSTAKA}
   \addcontentsline{toc}{chapter}{\bibname}
-  \titlespacing*{\chapter}{0pt}{0ex}{5ex}
-  \appendix
-  \bibliographystyle{apalike}
+  \bibliographystyle{unsrtnat}
   \bibliography{pustaka/pustaka.bib}
   \cleardoublepage
 
