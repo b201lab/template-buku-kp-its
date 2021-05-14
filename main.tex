@@ -40,9 +40,9 @@
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \def\kosong{
-	\vspace*{\fill}
-	\begin{center}\textit{Halaman ini sengaja dikosongkan}\end{center}
-	\vfill
+  \vspace*{\fill}
+  \begin{center}\textit{Halaman ini sengaja dikosongkan}\end{center}
+  \vfill
 }
 \patchcmd{\cleardoublepage}{\hbox{}}{\kosong}{}{}
 
@@ -69,7 +69,7 @@
 % Pengaturan persamaan
 \newenvironment{conditions}
 {\par\vspace{\abovedisplayskip}\noindent
-	\tabularx{\columnwidth}{>{$}l<{$} @{${}={}$} >{\raggedright\arraybackslash}X}}
+  \tabularx{\columnwidth}{>{$}l<{$} @{${}={}$} >{\raggedright\arraybackslash}X}}
 {\endtabularx\par\vspace{\belowdisplayskip}}
 
 % Pengaturan format baris program
@@ -78,19 +78,19 @@
 \definecolor{string}{RGB}{255,0,0}
 \definecolor{keyword}{RGB}{0,0,255}
 \lstdefinestyle{codestyle}{
-	commentstyle=\color{comment},
-	stringstyle=\color{string},
-	keywordstyle=\color{keyword},
-	basicstyle=\footnotesize\ttfamily,
-	numbers=left,
-	numberstyle=\tiny,
-	numbersep=5pt,
-	frame=lines,
-	breaklines=true,
-	prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
-	showstringspaces=false,
-	upquote=true,
-	tabsize=2,
+  commentstyle=\color{comment},
+  stringstyle=\color{string},
+  keywordstyle=\color{keyword},
+  basicstyle=\footnotesize\ttfamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  frame=lines,
+  breaklines=true,
+  prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+  showstringspaces=false,
+  upquote=true,
+  tabsize=2,
 }
 \lstset{style=codestyle}
 
@@ -142,27 +142,27 @@
   \pagenumbering{arabic}
 
   % Bab 1 pendahuluan
-	\input{bab/1-pendahuluan.tex}
+  \input{bab/1-pendahuluan.tex}
   \cleardoublepage
 
   % Bab 2 profil perusahaan
-	\input{bab/2-profil-perusahaan.tex}
+  \input{bab/2-profil-perusahaan.tex}
   \cleardoublepage
 
   % Bab 3 tunjauan pustaka
-	\input{bab/3-tinjauan-pustaka.tex}
+  \input{bab/3-tinjauan-pustaka.tex}
   \cleardoublepage
 
   % Bab 4 desain dan implementasi
-	\input{bab/4-desain-implementasi.tex}
+  \input{bab/4-desain-implementasi.tex}
   \cleardoublepage
 
   % Bab 5 pengujian dan evaluasi
-	\input{bab/5-pengujian-evaluasi.tex}
+  \input{bab/5-pengujian-evaluasi.tex}
   \cleardoublepage
 
   % Bab 6 kesimpulan dan saran
-	\input{bab/6-kesimpulan-saran.tex}
+  \input{bab/6-kesimpulan-saran.tex}
   \cleardoublepage
 
   % Daftar pustaka
@@ -173,7 +173,7 @@
   \cleardoublepage
 
   % Biografi penulis
-	\input{lainnya/biografi-penulis.tex}
+  \input{lainnya/biografi-penulis.tex}
   \cleardoublepage
 
 \end{document}
