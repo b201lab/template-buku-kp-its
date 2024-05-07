@@ -1,11 +1,5 @@
 # Template LaTeX Buku Laporan Kerja Praktik ITS
 
-[![latest version](https://img.shields.io/github/v/release/b201lab/template-buku-kp-its)](https://github.com/b201lab/template-buku-kp-its/releases/)
-[![commits since latest version](https://img.shields.io/github/commits-since/b201lab/template-buku-kp-its/latest)](https://github.com/b201lab/template-buku-kp-its/commits/master)
-[![repo size](https://img.shields.io/github/repo-size/b201lab/template-buku-kp-its)](https://github.com/b201lab/template-buku-ta-its)
-[![license](https://img.shields.io/github/license/b201lab/template-buku-kp-its)](./LICENSE)
-[![build status](https://img.shields.io/github/actions/workflow/status/b201lab/template-buku-kp-its/ci.yaml?branch=main)](https://github.com/b201lab/template-buku-kp-its/actions/workflows/ci.yaml)
-
 Repositori ini berisi template [LaTeX](https://www.latex-project.org/) dari buku laporan kerja praktik yang disesuaikan dengan format yang diberlakukan oleh [Institut Teknologi Sepuluh Nopember](https://www.its.ac.id/) (ITS).
 Template ini terinspirasi dari repositori [rohwid/id-thesis-book-min-electics-its](https://github.com/rohwid/id-thesis-book-min-electics-its) dengan perubahan yang menyesuaikan kebutuhan pembukuan laporan kerja praktik ITS serta dengan pemangkasan isi.
 Template yang dibuat saat ini baru mengikuti aturan yang diberlakukan oleh [Departemen Teknik Komputer](https://www.its.ac.id/komputer/) FTEIC - ITS dengan sedikit penyesuaian, sehingga, secara penuh template ini belum mewakili aturan yang berlaku secara umum di setiap departemen yang ada di ITS.
