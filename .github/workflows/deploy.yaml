@@ -18,7 +18,7 @@ jobs:
       cancel-in-progress: false
     steps:
       - name: Check Out
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.2.0
 
       - name: Compile Document
         uses: xu-cheng/latex-action@3.2.0
